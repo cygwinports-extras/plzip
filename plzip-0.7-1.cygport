@@ -1,0 +1,9 @@
+DESCRIPTION="Parallel Lzip de/compressor"
+HOMEPAGE="http://www.nongnu.org/lzip/plzip.html"
+SRC_URI="mirror://savannah/lzip/${P}.tar.gz"
+
+src_compile() {
+	cd ${B}
+	cygconf
+	cygmake
+}
